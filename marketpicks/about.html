@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="О проекте MarketPicks — прозрачность, партнёрская программа, контакты.">
+    <title>О проекте — MarketPicks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: { extend: {
+                colors: { 'ym-purple': '#5B2A9D', 'ym-purple-light': '#7B4FBF', 'ym-purple-dark': '#3D1A6E', 'ym-green': '#00C853', 'ym-bg': '#F5F3FF' },
+                fontFamily: { 'sans': ['Inter', 'system-ui', 'sans-serif'] }
+            }}
+        }
+    </script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-ym-bg font-sans text-gray-900 antialiased">
+    <div class="bg-ym-purple text-white text-center text-xs py-2 px-4">
+        <span>⚡ Содержит партнёрские ссылки.</span>
+    </div>
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-ym-purple rounded-xl flex items-center justify-center"><span class="text-white font-bold text-lg">M</span></div>
+                    <span class="text-xl font-bold">Market<span class="text-ym-purple">Picks</span></span>
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="text-gray-600 hover:text-ym-purple">Главная</a>
+                    <a href="/category.html" class="text-gray-600 hover:text-ym-purple">Каталог</a>
+                    <a href="/about.html" class="text-ym-purple font-semibold border-b-2 border-ym-purple pb-1">О проекте</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <h1 class="text-4xl font-bold mb-8">О проекте MarketPicks</h1>
+
+        <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 space-y-8">
+            <section>
+                <h2 class="text-2xl font-bold mb-4">🎯 Что мы делаем</h2>
+                <p class="text-gray-600 leading-relaxed">
+                    MarketPicks — независимый проект, который помогает находить лучшие товары на Яндекс Маркете.
+                    Мы вручную отбираем товары по рейтингу, отзывам и соотношению цена/качество, чтобы вы экономили
+                    время на поиске и деньги на покупках.
+                </p>
+            </section>
+
+            <section id="disclaimer">
+                <h2 class="text-2xl font-bold mb-4">⚖️ Партнёрская программа</h2>
+                <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-6">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        <strong>Прозрачность важна.</strong> Данный сайт участвует в партнёрской программе
+                        Яндекс Маркета. Это означает, что мы получаем комиссионное вознаграждение за покупки,
+                        совершённые по нашим ссылкам.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start"><span class="text-ym-green mr-2 mt-1">✓</span>
+                            <span>Цена для вас <strong>не меняется</strong> — вы платите столько же, сколько и при прямом переходе</span>
+                        </li>
+                        <li class="flex items-start"><span class="text-ym-green mr-2 mt-1">✓</span>
+                            <span>Мы рекомендуем только те товары, которые считаем <strong>действительно хорошими</strong></span>
+                        </li>
+                        <li class="flex items-start"><span class="text-ym-green mr-2 mt-1">✓</span>
+                            <span>Комиссия помогает нам поддерживать проект и создавать <strong>качественный контент</strong></span>
+                        </li>
+                    </ul>
+                </div>
+                <p class="text-sm text-gray-500 mt-4">
+                    Реклама. ИП Иванов Иван Иванович. ИНН 000000000000. Erid: XXXXXXXXXX.
+                    Все ссылки на товары являются партнёрскими и промаркированы в соответствии с
+                    Федеральным законом «О рекламе» (38-ФЗ).
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold mb-4">🔍 Как мы отбираем товары</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="bg-ym-bg rounded-xl p-4">
+                        <div class="text-2xl mb-2">⭐</div>
+                        <h3 class="font-semibold mb-1">Рейтинг от 4.0</h3>
+                        <p class="text-sm text-gray-500">Только товары с высоким рейтингом на Маркете</p>
+                    </div>
+                    <div class="bg-ym-bg rounded-xl p-4">
+                        <div class="text-2xl mb-2">💬</div>
+                        <h3 class="font-semibold mb-1">Реальные отзывы</h3>
+                        <p class="text-sm text-gray-500">Анализируем отзывы покупателей</p>
+                    </div>
+                    <div class="bg-ym-bg rounded-xl p-4">
+                        <div class="text-2xl mb-2">📊</div>
+                        <h3 class="font-semibold mb-1">Сравнение цен</h3>
+                        <p class="text-sm text-gray-500">Проверяем, что цена действительно выгодная</p>
+                    </div>
+                    <div class="bg-ym-bg rounded-xl p-4">
+                        <div class="text-2xl mb-2">✅</div>
+                        <h3 class="font-semibold mb-1">Наличие на складе</h3>
+                        <p class="text-sm text-gray-500">Рекомендуем только доступные товары</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contacts">
+                <h2 class="text-2xl font-bold mb-4">📬 Контакты</h2>
+                <p class="text-gray-600 mb-4">Есть вопросы, предложения или хотите сотрудничать?</p>
+                <ul class="space-y-3 text-gray-600">
+                    <li>📧 Email: <a href="mailto:hello@marketpicks.ru" class="text-ym-purple hover:underline">hello@marketpicks.ru</a></li>
+                    <li>💬 Telegram: <a href="https://t.me/your_channel" class="text-ym-purple hover:underline" target="_blank" rel="noopener">@marketpicks</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 mt-16">
+        <div class="max-w-7xl mx-auto px-4 text-center text-xs">
+            <p>© 2025 MarketPicks. Содержит партнёрские ссылки.</p>
+        </div>
+    </footer>
+</body>
+</html>

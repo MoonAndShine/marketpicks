@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Подробный обзор и сравнение лучших товаров с Яндекс Маркета. Экспертные рекомендации и честные отзывы.">
+    <title>Обзор товаров — MarketPicks</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ym-purple': '#5B2A9D',
+                        'ym-purple-light': '#7B4FBF',
+                        'ym-purple-dark': '#3D1A6E',
+                        'ym-green': '#00C853',
+                        'ym-green-dark': '#009624',
+                        'ym-orange': '#FF6D00',
+                        'ym-bg': '#F5F3FF',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Schema.org — Review -->
+    <script type="application/ld+json" id="review-schema">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Обзор товаров",
+        "author": { "@type": "Organization", "name": "MarketPicks" },
+        "datePublished": "2025-01-15",
+        "dateModified": "2025-01-15"
+    }
+    </script>
+</head>
+<body class="bg-ym-bg font-sans text-gray-900 antialiased">
+
+    <!-- Дисклеймер -->
+    <div class="bg-ym-purple text-white text-center text-xs py-2 px-4 relative">
+        <span>⚡ Содержит партнёрские ссылки. <a href="/about.html" class="underline">Подробнее</a></span>
+        <button onclick="this.parentElement.style.display='none'" class="absolute right-3 top-1/2 -translate-y-1/2 text-white/70 hover:text-white text-lg">&times;</button>
+    </div>
+
+    <!-- Шапка -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-ym-purple rounded-xl flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">M</span>
+                    </div>
+                    <span class="text-xl font-bold text-gray-900">Market<span class="text-ym-purple">Picks</span></span>
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="text-gray-600 hover:text-ym-purple transition-colors">Главная</a>
+                    <a href="/category.html" class="text-gray-600 hover:text-ym-purple transition-colors">Каталог</a>
+                    <a href="/about.html" class="text-gray-600 hover:text-ym-purple transition-colors">О проекте</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Меню">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden pb-4 border-t border-gray-100">
+                <div class="flex flex-col space-y-3 pt-4">
+                    <a href="/" class="text-gray-600 px-3 py-2 rounded-lg hover:bg-ym-bg">Главная</a>
+                    <a href="/category.html" class="text-gray-600 px-3 py-2 rounded-lg hover:bg-ym-bg">Каталог</a>
+                    <a href="/about.html" class="text-gray-600 px-3 py-2 rounded-lg hover:bg-ym-bg">О проекте</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Хлебные крошки -->
+        <nav class="text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
+            <ol class="flex items-center space-x-2">
+                <li><a href="/" class="hover:text-ym-purple">Главная</a></li>
+                <li><span class="mx-1">/</span></li>
+                <li><a href="/category.html" class="hover:text-ym-purple">Каталог</a></li>
+                <li><span class="mx-1">/</span></li>
+                <li class="text-gray-900 font-medium">Обзор</li>
+            </ol>
+        </nav>
+
+        <!-- Статья-обзор -->
+        <article class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+            <!-- Шапка статьи -->
+            <div class="bg-gradient-to-br from-ym-purple to-ym-purple-dark text-white p-8 sm:p-12">
+                <div class="inline-flex items-center bg-white/15 rounded-full px-3 py-1 text-sm mb-4">
+                    📝 Экспертный обзор
+                </div>
+                <h1 class="text-3xl sm:text-4xl font-bold mb-4">Топ-5 увлажнителей воздуха до 3000₽</h1>
+                <p class="text-purple-200 text-lg">Сравнение лучших моделей 2025 года по отзывам покупателей Яндекс Маркета</p>
+                <div class="flex items-center gap-4 mt-6 text-sm text-purple-200">
+                    <span>📅 Январь 2025</span>
+                    <span>⏱ 5 мин чтения</span>
+                    <span>👁 1.2K просмотров</span>
+                </div>
+            </div>
+
+            <!-- Содержание статьи -->
+            <div class="p-8 sm:p-12">
+                <!-- Введение -->
+                <div class="prose max-w-none mb-12">
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        Сухой воздух зимой — проблема каждой второй квартиры. Мы изучили более 50 моделей увлажнителей
+                        на Яндекс Маркете и отобрали 5 лучших вариантов до 3000₽ по соотношению цена/качество.
+                    </p>
+
+                    <div class="bg-ym-bg rounded-xl p-6 mt-6">
+                        <h3 class="font-bold text-gray-900 mb-3">📋 Критерии отбора:</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start"><span class="text-ym-green mr-2">✓</span> Рейтинг от 4.0 на Яндекс Маркете</li>
+                            <li class="flex items-start"><span class="text-ym-green mr-2">✓</span> Не менее 50 отзывов покупателей</li>
+                            <li class="flex items-start"><span class="text-ym-green mr-2">✓</span> Цена до 3000₽ на момент публикации</li>
+                            <li class="flex items-start"><span class="text-ym-green mr-2">✓</span> Наличие на складе Яндекс Маркета</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Товары обзора — заполняются из JSON -->
+                <div id="review-products" class="space-y-8">
+                    <!-- Заполняется через JS -->
+                </div>
+
+                <!-- Итоговая таблица сравнения -->
+                <div class="mt-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">📊 Сравнительная таблица</h2>
+                    <div class="overflow-x-auto">
+                        <table id="comparison-table" class="w-full text-sm border-collapse">
+                            <thead>
+                                <tr class="bg-ym-bg">
+                                    <th class="text-left p-4 font-semibold rounded-tl-xl">Товар</th>
+                                    <th class="text-center p-4 font-semibold">Цена</th>
+                                    <th class="text-center p-4 font-semibold">Рейтинг</th>
+                                    <th class="text-center p-4 font-semibold rounded-tr-xl">Ссылка</th>
+                                </tr>
+                            </thead>
+                            <tbody id="comparison-tbody">
+                                <!-- Заполняется через JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Вывод -->
+                <div class="mt-12 bg-gradient-to-r from-ym-bg to-green-50 rounded-2xl p-8">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">🏆 Наш выбор</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        По совокупности характеристик, отзывов и цены мы рекомендуем обратить внимание на первые
+                        два варианта из нашей подборки. Они предлагают лучшее соотношение цена/качество
+                        и имеют наивысший рейтинг среди покупателей.
+                    </p>
+                </div>
+
+                <!-- Перелинковка -->
+                <div class="mt-12 pt-8 border-t border-gray-100">
+                    <h3 class="text-lg font-bold text-gray-900 mb-4">📚 Читайте также:</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <a href="/review.html?id=top5-gifts-1000" class="flex items-center p-4 bg-ym-bg rounded-xl hover:bg-purple-100 transition-colors">
+                            <span class="text-2xl mr-3">🎁</span>
+                            <span class="font-medium text-gray-900">Что подарить коллеге до 1000₽</span>
+                        </a>
+                        <a href="/category.html?cat=home" class="flex items-center p-4 bg-ym-bg rounded-xl hover:bg-purple-100 transition-colors">
+                            <span class="text-2xl mr-3">🏠</span>
+                            <span class="font-medium text-gray-900">Все товары для дома</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="bg-gray-900 text-gray-400 py-8 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs">
+            <p>© 2025 MarketPicks. Содержит партнёрские ссылки. <a href="/about.html" class="underline hover:text-white">Подробнее</a></p>
+            <p class="mt-1">Реклама. ИП Иванов И.И. ИНН 000000000000. Erid: XXXXXXXXXX</p>
+        </div>
+    </footer>
+
+    <script src="/js/app.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            initReviewPage();
+        });
+    </script>
+</body>
+</html>

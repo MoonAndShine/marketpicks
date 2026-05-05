@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Лучшие товары с Яндекс Маркета — экспертные подборки, скидки и выгодные предложения. Гаджеты, товары для дома, подарки до 1000₽.">
+    <meta name="keywords" content="яндекс маркет, скидки, лучшие товары, подарки, гаджеты, товары для дома">
+    <meta name="author" content="MarketPicks">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="MarketPicks — Лучшие находки на Яндекс Маркете">
+    <meta property="og:description" content="Экспертные подборки товаров с Яндекс Маркета. Скидки, обзоры, сравнения.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-domain.ru/">
+    <meta property="og:image" content="https://your-domain.ru/img/og-cover.jpg">
+    <meta property="og:locale" content="ru_RU">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MarketPicks — Лучшие находки на Яндекс Маркете">
+    <meta name="twitter:description" content="Экспертные подборки товаров с Яндекс Маркета.">
+    <meta name="twitter:image" content="https://your-domain.ru/img/og-cover.jpg">
+
+    <title>MarketPicks — Лучшие находки на Яндекс Маркете</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+
+    <!-- Шрифт Inter — оптимизированная загрузка -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ym-purple': '#5B2A9D',
+                        'ym-purple-light': '#7B4FBF',
+                        'ym-purple-dark': '#3D1A6E',
+                        'ym-green': '#00C853',
+                        'ym-green-dark': '#009624',
+                        'ym-orange': '#FF6D00',
+                        'ym-bg': '#F5F3FF',
+                        'ym-card': '#FFFFFF',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Кастомные стили -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Schema.org — WebSite -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "MarketPicks",
+        "url": "https://your-domain.ru/",
+        "description": "Экспертные подборки лучших товаров с Яндекс Маркета",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://your-domain.ru/category.html?search={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+
+    <!-- Schema.org — BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Главная",
+                "item": "https://your-domain.ru/"
+            }
+        ]
+    }
+    </script>
+
+    <!--
+        ===== ЯНДЕКС МЕТРИКА =====
+        Вставьте сюда код счётчика Яндекс.Метрики:
+        https://metrika.yandex.ru/
+        Замените XXXXXXXX на ваш номер счётчика
+    -->
+    <!--
+    <script type="text/javascript">
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();
+       for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+       k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+       ym(XXXXXXXX, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true });
+    </script>
+    -->
+</head>
+<body class="bg-ym-bg font-sans text-gray-900 antialiased">
+
+    <!-- ===== ДИСКЛЕЙМЕР О ПАРТНЁРСКИХ ССЫЛКАХ ===== -->
+    <div id="affiliate-disclaimer" class="bg-ym-purple text-white text-center text-xs py-2 px-4 relative">
+        <span>⚡ Сайт содержит партнёрские ссылки. Мы можем получать комиссию за покупки — для вас цена не меняется.
+            <a href="/about.html" class="underline hover:text-ym-green ml-1">Подробнее</a>
+        </span>
+        <button onclick="this.parentElement.style.display='none'" class="absolute right-3 top-1/2 -translate-y-1/2 text-white/70 hover:text-white text-lg" aria-label="Закрыть">&times;</button>
+    </div>
+
+    <!-- ===== ШАПКА ===== -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Логотип -->
+                <a href="/" class="flex items-center space-x-2 group">
+                    <div class="w-10 h-10 bg-ym-purple rounded-xl flex items-center justify-center group-hover:bg-ym-purple-light transition-colors">
+                        <span class="text-white font-bold text-lg">M</span>
+                    </div>
+                    <span class="text-xl font-bold text-gray-900">Market<span class="text-ym-purple">Picks</span></span>
+                </a>
+
+                <!-- Навигация десктоп -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="text-ym-purple font-semibold border-b-2 border-ym-purple pb-1">Главная</a>
+                    <a href="/category.html?cat=budget" class="text-gray-600 hover:text-ym-purple transition-colors">До 1000₽</a>
+                    <a href="/category.html?cat=home" class="text-gray-600 hover:text-ym-purple transition-colors">Для дома</a>
+                    <a href="/category.html?cat=gadgets" class="text-gray-600 hover:text-ym-purple transition-colors">Гаджеты</a>
+                    <a href="/category.html?cat=gifts" class="text-gray-600 hover:text-ym-purple transition-colors">Подарки</a>
+                    <a href="/category.html?cat=deals" class="text-gray-600 hover:text-ym-purple transition-colors font-medium text-ym-orange">🔥 Акции</a>
+                    <a href="/about.html" class="text-gray-600 hover:text-ym-purple transition-colors">О проекте</a>
+                </div>
+
+                <!-- Мобильное меню — кнопка -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Меню">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Мобильное меню — выпадающее -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4 border-t border-gray-100">
+                <div class="flex flex-col space-y-3 pt-4">
+                    <a href="/" class="text-ym-purple font-semibold px-3 py-2 rounded-lg bg-ym-bg">Главная</a>
+                    <a href="/category.html?cat=budget" class="text-gray-600 hover:text-ym-purple px-3 py-2 rounded-lg hover:bg-ym-bg transition-colors">💰 До 1000₽</a>
+                    <a href="/category.html?cat=home" class="text-gray-600 hover:text-ym-purple px-3 py-2 rounded-lg hover:bg-ym-bg transition-colors">🏠 Для дома</a>
+                    <a href="/category.html?cat=gadgets" class="text-gray-600 hover:text-ym-purple px-3 py-2 rounded-lg hover:bg-ym-bg transition-colors">📱 Гаджеты</a>
+                    <a href="/category.html?cat=gifts" class="text-gray-600 hover:text-ym-purple px-3 py-2 rounded-lg hover:bg-ym-bg transition-colors">🎁 Подарки</a>
+                    <a href="/category.html?cat=deals" class="text-ym-orange font-medium px-3 py-2 rounded-lg hover:bg-orange-50 transition-colors">🔥 Акции недели</a>
+                    <a href="/about.html" class="text-gray-600 hover:text-ym-purple px-3 py-2 rounded-lg hover:bg-ym-bg transition-colors">ℹ️ О проекте</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ===== HERO-БЛОК ===== -->
+        <section class="relative bg-gradient-to-br from-ym-purple via-ym-purple-dark to-purple-900 text-white overflow-hidden">
+            <!-- Декоративные элементы -->
+            <div class="absolute inset-0 opacity-10">
+                <div class="absolute top-10 left-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>
+                <div class="absolute bottom-10 right-10 w-96 h-96 bg-ym-green rounded-full blur-3xl"></div>
+            </div>
+
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32">
+                <div class="max-w-3xl">
+                    <div class="inline-flex items-center bg-white/15 backdrop-blur-sm rounded-full px-4 py-2 mb-6 text-sm">
+                        <span class="w-2 h-2 bg-ym-green rounded-full mr-2 animate-pulse"></span>
+                        Обновлено сегодня — актуальные цены
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+                        Лучшие находки<br>
+                        на <span class="text-yellow-300">Яндекс Маркете</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-purple-100 mb-8 max-w-2xl">
+                        Экспертные подборки товаров с максимальными скидками. Мы проверяем каждый товар — вы экономите время и деньги.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#products-week" class="cta-button inline-flex items-center justify-center bg-ym-green hover:bg-ym-green-dark text-white font-bold px-8 py-4 rounded-xl text-lg transition-all shadow-lg shadow-green-500/30 hover:shadow-green-500/50">
+                            🔥 Товары недели
+                            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </a>
+                        <a href="/category.html?cat=deals" class="inline-flex items-center justify-center bg-white/15 hover:bg-white/25 backdrop-blur-sm text-white font-semibold px-8 py-4 rounded-xl text-lg transition-all border border-white/20">
+                            📋 Все категории
+                        </a>
+                    </div>
+
+                    <!-- Мини-статистика -->
+                    <div class="flex flex-wrap gap-8 mt-12 pt-8 border-t border-white/20">
+                        <div>
+                            <div class="text-3xl font-bold">500+</div>
+                            <div class="text-purple-200 text-sm">Проверенных товаров</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold">до 70%</div>
+                            <div class="text-purple-200 text-sm">Скидки на Маркете</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold">⭐ 4.5+</div>
+                            <div class="text-purple-200 text-sm">Средний рейтинг</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== КАТЕГОРИИ ===== -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+                <a href="/category.html?cat=budget" class="category-card group bg-white rounded-2xl p-6 text-center shadow-sm hover:shadow-lg transition-all border border-gray-100 hover:border-ym-purple/30">
+                    <div class="text-4xl mb-3 group-hover:scale-110 transition-transform">💰</div>
+                    <div class="font-semibold text-gray-900">До 1000₽</div>
+                    <div class="text-xs text-gray-500 mt-1">Бюджетные находки</div>
+                </a>
+                <a href="/category.html?cat=home" class="category-card group bg-white rounded-2xl p-6 text-center shadow-sm hover:shadow-lg transition-all border border-gray-100 hover:border-ym-purple/30">
+                    <div class="text-4xl mb-3 group-hover:scale-110 transition-transform">🏠</div>
+                    <div class="font-semibold text-gray-900">Для дома</div>
+                    <div class="text-xs text-gray-500 mt-1">Уют и комфорт</div>
+                </a>
+                <a href="/category.html?cat=gadgets" class="category-card group bg-white rounded-2xl p-6 text-center shadow-sm hover:shadow-lg transition-all border border-gray-100 hover:border-ym-purple/30">
+                    <div class="text-4xl mb-3 group-hover:scale-110 transition-transform">📱</div>
+                    <div class="font-semibold text-gray-900">Гаджеты</div>
+                    <div class="text-xs text-gray-500 mt-1">Техника и электроника</div>
+                </a>
+                <a href="/category.html?cat=gifts" class="category-card group bg-white rounded-2xl p-6 text-center shadow-sm hover:shadow-lg transition-all border border-gray-100 hover:border-ym-purple/30">
+                    <div class="text-4xl mb-3 group-hover:scale-110 transition-transform">🎁</div>
+                    <div class="font-semibold text-gray-900">Подарки</div>
+                    <div class="text-xs text-gray-500 mt-1">Идеи подарков</div>
+                </a>
+                <a href="/category.html?cat=deals" class="category-card group bg-white rounded-2xl p-6 text-center shadow-sm hover:shadow-lg transition-all border border-orange-100 hover:border-ym-orange/30 col-span-2 sm:col-span-1">
+                    <div class="text-4xl mb-3 group-hover:scale-110 transition-transform">🔥</div>
+                    <div class="font-semibold text-ym-orange">Акции недели</div>
+                    <div class="text-xs text-gray-500 mt-1">Горящие скидки</div>
+                </a>
+            </div>
+        </section>
+
+        <!-- ===== ТОВАРЫ НЕДЕЛИ ===== -->
+        <section id="products-week" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="flex items-center justify-between mb-8">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900">🔥 Товары недели</h2>
+                    <p class="text-gray-500 mt-1">Отобрано экспертно — проверено вручную</p>
+                </div>
+                <a href="/category.html" class="hidden sm:inline-flex items-center text-ym-purple font-semibold hover:text-ym-purple-light transition-colors">
+                    Все товары
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+
+            <!-- Контейнер для карточек — заполняется через JS -->
+            <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Скелетоны загрузки -->
+                <div class="skeleton-card bg-white rounded-2xl p-4 shadow-sm animate-pulse">
+                    <div class="bg-gray-200 rounded-xl h-48 mb-4"></div>
+                    <div class="bg-gray-200 rounded h-4 w-3/4 mb-2"></div>
+                    <div class="bg-gray-200 rounded h-4 w-1/2 mb-4"></div>
+                    <div class="bg-gray-200 rounded h-10 w-full"></div>
+                </div>
+                <div class="skeleton-card bg-white rounded-2xl p-4 shadow-sm animate-pulse hidden sm:block">
+                    <div class="bg-gray-200 rounded-xl h-48 mb-4"></div>
+                    <div class="bg-gray-200 rounded h-4 w-3/4 mb-2"></div>
+                    <div class="bg-gray-200 rounded h-4 w-1/2 mb-4"></div>
+                    <div class="bg-gray-200 rounded h-10 w-full"></div>
+                </div>
+                <div class="skeleton-card bg-white rounded-2xl p-4 shadow-sm animate-pulse hidden lg:block">
+                    <div class="bg-gray-200 rounded-xl h-48 mb-4"></div>
+                    <div class="bg-gray-200 rounded h-4 w-3/4 mb-2"></div>
+                    <div class="bg-gray-200 rounded h-4 w-1/2 mb-4"></div>
+                    <div class="bg-gray-200 rounded h-10 w-full"></div>
+                </div>
+                <div class="skeleton-card bg-white rounded-2xl p-4 shadow-sm animate-pulse hidden xl:block">
+                    <div class="bg-gray-200 rounded-xl h-48 mb-4"></div>
+                    <div class="bg-gray-200 rounded h-4 w-3/4 mb-2"></div>
+                    <div class="bg-gray-200 rounded h-4 w-1/2 mb-4"></div>
+                    <div class="bg-gray-200 rounded h-10 w-full"></div>
+                </div>
+            </div>
+
+            <div class="text-center mt-8 sm:hidden">
+                <a href="/category.html" class="inline-flex items-center text-ym-purple font-semibold">
+                    Смотреть все товары →
+                </a>
+            </div>
+        </section>
+
+        <!-- ===== БЛОК «ПОЧЕМУ НАМ ДОВЕРЯЮТ» ===== -->
+        <section class="bg-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Почему нам доверяют</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center p-6">
+                        <div class="w-16 h-16 bg-ym-bg rounded-2xl flex items-center justify-center mx-auto mb-4">
+                            <span class="text-3xl">🔍</span>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2">Ручная проверка</h3>
+                        <p class="text-gray-500">Каждый товар проверяется по отзывам, рейтингу и реальным фото покупателей</p>
+                    </div>
+                    <div class="text-center p-6">
+                        <div class="w-16 h-16 bg-ym-bg rounded-2xl flex items-center justify-center mx-auto mb-4">
+                            <span class="text-3xl">💸</span>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2">Цена не меняется</h3>
+                        <p class="text-gray-500">Вы покупаете по той же цене, что и напрямую на Яндекс Маркете — без наценок</p>
+                    </div>
+                    <div class="text-center p-6">
+                        <div class="w-16 h-16 bg-ym-bg rounded-2xl flex items-center justify-center mx-auto mb-4">
+                            <span class="text-3xl">⚡</span>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2">Актуальные скидки</h3>
+                        <p class="text-gray-500">Обновляем подборки каждую неделю — только действующие акции и промокоды</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ПОПУЛЯРНЫЕ ОБЗОРЫ ===== -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8">📝 Популярные обзоры</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="/review.html?id=top5-humidifiers" class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-gray-100">
+                    <div class="bg-gradient-to-br from-blue-100 to-blue-50 p-8 text-center">
+                        <span class="text-5xl">💨</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs text-ym-purple font-semibold uppercase tracking-wide mb-2">Обзор · Для дома</div>
+                        <h3 class="text-lg font-bold group-hover:text-ym-purple transition-colors">Топ-5 увлажнителей воздуха до 3000₽</h3>
+                        <p class="text-gray-500 text-sm mt-2">Сравнение лучших моделей 2025 года по отзывам покупателей</p>
+                    </div>
+                </a>
+                <a href="/review.html?id=top5-gifts-1000" class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-gray-100">
+                    <div class="bg-gradient-to-br from-pink-100 to-pink-50 p-8 text-center">
+                        <span class="text-5xl">🎁</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs text-ym-purple font-semibold uppercase tracking-wide mb-2">Подборка · Подарки</div>
+                        <h3 class="text-lg font-bold group-hover:text-ym-purple transition-colors">Что подарить коллеге до 1000₽</h3>
+                        <p class="text-gray-500 text-sm mt-2">15 идей подарков, которые точно понравятся</p>
+                    </div>
+                </a>
+                <a href="/review.html?id=top5-gadgets" class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all border border-gray-100">
+                    <div class="bg-gradient-to-br from-purple-100 to-purple-50 p-8 text-center">
+                        <span class="text-5xl">📱</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-xs text-ym-purple font-semibold uppercase tracking-wide mb-2">Обзор · Гаджеты</div>
+                        <h3 class="text-lg font-bold group-hover:text-ym-purple transition-colors">Топ-5 полезных гаджетов до 2000₽</h3>
+                        <p class="text-gray-500 text-sm mt-2">Гаджеты, которые реально используешь каждый день</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!--
+            ===== ВИДЖЕТ ЯНДЕКС МАРКЕТА =====
+            Здесь можно вставить официальный виджет Яндекс Маркета.
+            Получите код виджета в кабинете партнёра:
+            https://partner.market.yandex.ru/
+            Вставьте <script> и <div> код виджета ниже:
+        -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div id="yandex-market-widget" class="bg-white rounded-2xl p-8 border-2 border-dashed border-gray-200 text-center text-gray-400">
+                <!-- Место для виджета Яндекс Маркета -->
+                <p>📦 Здесь будет виджет Яндекс Маркета</p>
+                <p class="text-sm mt-2">Вставьте код из кабинета партнёра</p>
+            </div>
+        </section>
+
+        <!-- ===== ПОДПИСКА ===== -->
+        <section class="bg-gradient-to-br from-ym-purple to-ym-purple-dark text-white py-16">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold mb-4">📬 Не пропустите лучшие скидки</h2>
+                <p class="text-purple-200 mb-8 text-lg">Подпишитесь на наш Telegram-канал — публикуем горящие предложения каждый день</p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <!--
+                        Замените ссылку на ваш реальный Telegram-канал
+                    -->
+                    <a href="https://t.me/your_channel" target="_blank" rel="noopener noreferrer"
+                       class="cta-button inline-flex items-center justify-center bg-[#0088cc] hover:bg-[#006699] text-white font-bold px-8 py-4 rounded-xl text-lg transition-all shadow-lg">
+                        <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                        Подписаться на Telegram
+                    </a>
+                </div>
+
+                <!-- Email-подписка (опционально — подключите Mailchimp/Sendsay) -->
+                <div class="mt-8 pt-8 border-t border-white/20">
+                    <p class="text-purple-200 text-sm mb-4">Или получайте подборки на email:</p>
+                    <form id="email-form" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return handleEmailSubmit(event)">
+                        <input type="email" placeholder="your@email.com" required
+                               class="flex-1 px-4 py-3 rounded-xl text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-ym-green">
+                        <button type="submit" class="bg-ym-green hover:bg-ym-green-dark text-white font-semibold px-6 py-3 rounded-xl transition-colors">
+                            Подписаться
+                        </button>
+                    </form>
+                    <p id="email-success" class="hidden text-ym-green mt-3 font-semibold">✅ Спасибо! Вы подписаны.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== ПОДВАЛ ===== -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-ym-purple rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">M</span>
+                        </div>
+                        <span class="text-lg font-bold text-white">Market<span class="text-ym-purple-light">Picks</span></span>
+                    </div>
+                    <p class="text-sm leading-relaxed max-w-sm">
+                        Независимый проект с экспертными подборками товаров с Яндекс Маркета.
+                        Мы помогаем находить лучшие предложения и экономить на покупках.
+                    </p>
+                    <p class="text-xs mt-4 text-gray-500">
+                        ⚠️ Сайт содержит партнёрские ссылки. При покупке через них мы получаем комиссию.
+                        Цена для вас не меняется. Реклама. ИП Иванов И.И. ИНН 000000000000.
+                        Erid: XXXXXXXXXX
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Категории</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/category.html?cat=budget" class="hover:text-white transition-colors">До 1000₽</a></li>
+                        <li><a href="/category.html?cat=home" class="hover:text-white transition-colors">Для дома</a></li>
+                        <li><a href="/category.html?cat=gadgets" class="hover:text-white transition-colors">Гаджеты</a></li>
+                        <li><a href="/category.html?cat=gifts" class="hover:text-white transition-colors">Подарки</a></li>
+                        <li><a href="/category.html?cat=deals" class="hover:text-white transition-colors">Акции недели</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Информация</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/about.html" class="hover:text-white transition-colors">О проекте</a></li>
+                        <li><a href="/about.html#disclaimer" class="hover:text-white transition-colors">Дисклеймер</a></li>
+                        <li><a href="/about.html#contacts" class="hover:text-white transition-colors">Контакты</a></li>
+                        <li><a href="https://t.me/your_channel" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Telegram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-xs text-gray-500">
+                <p>© 2025 MarketPicks. Все права защищены. Не является публичной офертой.</p>
+                <p class="mt-1">Яндекс Маркет — зарегистрированный товарный знак ООО «Яндекс».</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Основной скрипт — defer для быстрой загрузки -->
+    <script src="/js/app.js" defer></script>
+</body>
+</html>

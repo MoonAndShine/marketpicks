@@ -1,0 +1,290 @@
+/**
+ * MarketPicks — Кастомные стили
+ * Поверх Tailwind CSS CDN
+ */
+
+/* ===== БАЗОВЫЕ СТИЛИ ===== */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* ===== ОГРАНИЧЕНИЕ СТРОК (line-clamp) ===== */
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* ===== CTA КНОПКИ — АНИМАЦИИ ===== */
+.cta-button {
+    position: relative;
+    overflow: hidden;
+    transform: translateZ(0); /* GPU ускорение */
+}
+
+.cta-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+}
+
+.cta-button:active::after {
+    width: 300px;
+    height: 300px;
+}
+
+/* Эффект пульсации для основных CTA */
+
+@keyframes pulse-soft {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(91, 42, 157, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 0 8px rgba(91, 42, 157, 0);
+    }
+}
+
+.cta-button:hover {
+    transform: translateY(-1px);
+}
+
+/* ===== КАРТОЧКИ ТОВАРОВ ===== */
+.product-card {
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    will-change: transform;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+}
+
+/* ===== КАРТОЧКИ КАТЕГОРИЙ ===== */
+.category-card {
+    transition: transform 0.2s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-2px);
+}
+
+/* ===== СКЕЛЕТОН ЗАГРУЗКИ ===== */
+@keyframes shimmer {
+    0% {
+        background-position: -200px 0;
+    }
+    100% {
+        background-position: calc(200px + 100%) 0;
+    }
+}
+
+.skeleton-card > div {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200px 100%;
+    animation: shimmer 1.5s infinite;
+}
+
+/* ===== DETAILS/SUMMARY СТИЛИ ===== */
+details summary {
+    list-style: none;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+details[open] summary {
+    margin-bottom: 0;
+}
+
+/* ===== СКРОЛЛБАР ===== */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f5f3ff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5B2A9D;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7B4FBF;
+}
+
+/* ===== АДАПТИВНОСТЬ ===== */
+
+/* Мобильные устройства (до 640px) */
+@media (max-width: 639px) {
+    /* Увеличиваем область нажатия кнопок */
+    .cta-button {
+        min-height: 48px;
+        font-size: 16px; /* Предотвращает зум на iOS */
+    }
+
+    /* Фиксированная нижняя панель на мобильных (опционально) */
+    /* Раскомментируйте если нужна sticky кнопка внизу */
+    /*
+    .mobile-sticky-cta {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: white;
+        padding: 12px 16px;
+        box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+        z-index: 40;
+    }
+    */
+}
+
+/* Планшеты (640px - 1024px) */
+@media (min-width: 640px) and (max-width: 1023px) {
+    .product-card img {
+        height: 200px;
+    }
+}
+
+/* Десктоп (от 1024px) */
+@media (min-width: 1024px) {
+    .product-card img {
+        height: 220px;
+    }
+}
+
+/* ===== АНИМАЦИЯ ПОЯВЛЕНИЯ ===== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.product-card {
+    animation: fadeInUp 0.4s ease forwards;
+}
+
+.product-card:nth-child(1) { animation-delay: 0.05s; }
+.product-card:nth-child(2) { animation-delay: 0.1s; }
+.product-card:nth-child(3) { animation-delay: 0.15s; }
+.product-card:nth-child(4) { animation-delay: 0.2s; }
+.product-card:nth-child(5) { animation-delay: 0.25s; }
+.product-card:nth-child(6) { animation-delay: 0.3s; }
+.product-card:nth-child(7) { animation-delay: 0.35s; }
+.product-card:nth-child(8) { animation-delay: 0.4s; }
+
+/* ===== PROSE СТИЛИ (для статей) ===== */
+.prose p {
+    margin-bottom: 1rem;
+    line-height: 1.75;
+}
+
+.prose h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.prose h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.prose ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* ===== ТАБЛИЦА СРАВНЕНИЯ ===== */
+#comparison-table {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#comparison-table th {
+    font-size: 0.875rem;
+}
+
+#comparison-table td {
+    font-size: 0.875rem;
+}
+
+/* ===== ФОКУС ДЛЯ ДОСТУПНОСТИ ===== */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+    outline: 2px solid #5B2A9D;
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* ===== PRINT СТИЛИ ===== */
+@media print {
+    header, footer, .cta-button, #affiliate-disclaimer {
+        display: none !important;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
+
+    .product-card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+}
+
+/* ===== SVG ИКОНКА ПОВОРОТ (мобильное меню) ===== */
+.rotate-90 {
+    transform: rotate(90deg);
+    transition: transform 0.2s ease;
+}
+
+/* ===== БЕЙДЖ «НОВИНКА» ПУЛЬСАЦИЯ ===== */
+@keyframes badge-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.badge-pulse {
+    animation: badge-pulse 2s infinite;
+}

@@ -1,0 +1,148 @@
+{
+    "meta": {
+        "last_updated": "2025-01-15",
+        "total_products": 7,
+        "version": "1.0"
+    },
+    "categories": {
+        "budget": {
+            "title": "До 1000₽",
+            "description": "Бюджетные находки — качественные товары по доступной цене",
+            "emoji": "💰"
+        },
+        "home": {
+            "title": "Для дома",
+            "description": "Товары для уюта и комфорта вашего дома",
+            "emoji": "🏠"
+        },
+        "gadgets": {
+            "title": "Гаджеты",
+            "description": "Полезная техника и электроника на каждый день",
+            "emoji": "📱"
+        },
+        "gifts": {
+            "title": "Подарки",
+            "description": "Идеи подарков для любого повода и бюджета",
+            "emoji": "🎁"
+        },
+        "deals": {
+            "title": "Акции недели",
+            "description": "Горящие скидки и лучшие предложения этой недели",
+            "emoji": "🔥"
+        }
+    },
+    "products": [
+        {
+            "id": "humidifier-xiaomi",
+            "title": "Увлажнитель воздуха Xiaomi Smart Humidifier 2",
+            "category": ["home", "deals"],
+            "price": 2790,
+            "old_price": 3990,
+            "rating": 4.7,
+            "reviews_count": 1243,
+            "image": "https://avatars.mds.yandex.net/get-mpic/5235693/img_id7051882547891798044.jpeg/600x600",
+            "affiliate_link": "https://market.yandex.ru/product--uvlazhnitel-vozdukha-xiaomi/123456789",
+            "why_recommended": "Тихая работа, управление через приложение Mi Home, объём бака 4.5 л — хватает на всю ночь. Лучший выбор в своей ценовой категории по отзывам покупателей.",
+            "commission_percent": 12,
+            "badge": "Выбор редакции",
+            "features": ["4.5 л бак", "До 36 часов работы", "Управление со смартфона", "Тихий режим 38 дБ"],
+            "in_stock": true
+        },
+        {
+            "id": "led-lamp-yeelight",
+            "title": "Умная лампа Yeelight LED Bulb W3 (цветная)",
+            "category": ["gadgets", "home", "budget"],
+            "price": 890,
+            "old_price": 1490,
+            "rating": 4.5,
+            "reviews_count": 876,
+            "image": "https://avatars.mds.yandex.net/get-mpic/4080024/img_id6619364583631854919.jpeg/600x600",
+            "affiliate_link": "https://market.yandex.ru/product--umnaia-lampa-yeelight/987654321",
+            "why_recommended": "16 миллионов цветов, работает с Алисой и Google Home. Отличный вход в умный дом за минимальные деньги. Легко настраивается через приложение.",
+            "commission_percent": 18,
+            "badge": "До 1000₽",
+            "features": ["16 млн цветов", "Wi-Fi подключение", "Работает с Алисой", "Энергосберегающая"],
+            "in_stock": true
+        },
+        {
+            "id": "powerbank-baseus",
+            "title": "Внешний аккумулятор Baseus Bipow 20000 мАч",
+            "category": ["gadgets", "gifts"],
+            "price": 1890,
+            "old_price": 2490,
+            "rating": 4.6,
+            "reviews_count": 2341,
+            "image": "https://avatars.mds.yandex.net/get-mpic/4397295/img_id1234567890123456789.jpeg/600x600",
+            "affiliate_link": "https://market.yandex.ru/product--vneshnii-akkumuliator-baseus/111222333",
+            "why_recommended": "20000 мАч — хватит зарядить iPhone 4-5 раз. Быстрая зарядка 22.5W, компактный размер. Один из самых популярных повербанков на Маркете с рейтингом 4.6.",
+            "commission_percent": 15,
+            "badge": "Хит продаж",
+            "features": ["20000 мАч", "Быстрая зарядка 22.5W", "3 порта", "LED-индикатор"],
+            "in_stock": true
+        },
+        {
+            "id": "coffee-mug-thermos",
+            "title": "Термокружка Stanley Classic 0.47 л",
+            "category": ["gifts", "budget"],
+            "price": 980,
+            "old_price": null,
+            "rating": 4.8,
+            "reviews_count": 567,
+            "image": "https://avatars.mds.yandex.net/get-mpic/5220309/img_id9876543210987654321.jpeg/600x600",
+            "affiliate_link": "https://market.yandex.ru/product--termokruzhka-stanley/444555666",
+            "why_recommended": "Легендарный бренд Stanley. Держит тепло до 7 часов, холод до 10 часов. Идеальный подарок коллеге или другу — стильная, практичная, неубиваемая.",
+            "commission_percent": 20,
+            "badge": "Идея подарка",
+            "features": ["0.47 л объём", "Тепло до 7 часов", "Нержавеющая сталь", "Гарантия бренда"],
+            "in_stock": true
+        },
+        {
+            "id": "robot-vacuum-dreame",
+            "title": "Робот-пылесос Dreame D10s Pro",
+            "category": ["home", "gadgets", "deals"],
+            "price": 18990,
+            "old_price": 29990,
+            "rating": 4.4,
+            "reviews_count": 1890,
+            "image": "https://avatars.mds.yandex.net/get-mpic/6265958/img_id1111222233334444555.jpeg/600x600",
+            "affiliate_link": "https://market.yandex.ru/product--robot-pylesos-dreame/777888999",
+            "why_recommended": "Мощность всасывания 5000 Па, LiDAR-навигация, влажная уборка. Скидка 37% — одно из лучших предложений на рынке. Работает с Алисой.",
+            "commission_percent": 8,
+            "badge": "Скидка 37%",
+            "features": ["5000 Па мощность", "LiDAR навигация", "Влажная уборка", "Работа с Алисой"],
+            "in_stock": true
+        },
+        {
+            "id": "wireless-earbuds-qcy",
+            "title": "Беспроводные наушники QCY T13 ANC",
+            "category": ["gadgets", "budget", "deals"],
+            "price": 790,
+            "old_price": 1590,
+            "rating": 4.3,
+            "reviews_count": 3456,
+            "image": "https://avatars.mds.yandex.net/get-mpic/4473869/img_id5555666677778888999.jpeg/600x600",
+            "affiliate_link": "https://market.yandex.ru/product--besprovodnye-naushniki-qcy/101010101",
+            "why_recommended": "Активное шумоподавление за 790₽ — это невероятно. Автономность 30 часов с кейсом, Bluetooth 5.3. Лучшие бюджетные TWS-наушники по версии покупателей.",
+            "commission_percent": 22,
+            "badge": "Скидка 50%",
+            "features": ["Активное шумоподавление", "30 часов автономности", "Bluetooth 5.3", "IPX5 защита"],
+            "in_stock": true
+        },
+        {
+            "id": "aroma-diffuser",
+            "title": "Аромадиффузор с подсветкой Kyvol Vigoair HD3",
+            "category": ["home", "gifts", "budget"],
+            "price": 690,
+            "old_price": 990,
+            "rating": 4.5,
+            "reviews_count": 234,
+            "image": "https://avatars.mds.yandex.net/get-mpic/4080024/img_id2222333344445555666.jpeg/600x600",
+            "affiliate_link": "https://market.yandex.ru/product--aromadiffuzor-kyvol/202020202",
+            "why_recommended": "Красивая LED-подсветка с 7 цветами, тихая работа, автоотключение. Отличный подарок — создаёт уютную атмосферу. Объём 300 мл.",
+            "commission_percent": 25,
+            "badge": "Высокая комиссия",
+            "features": ["300 мл объём", "7 цветов подсветки", "Автоотключение", "Тихая работа"],
+            "in_stock": true
+        }
+    ]
+}

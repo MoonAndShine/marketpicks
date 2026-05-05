@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 — Страница не найдена | MarketPicks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: { extend: {
+                colors: { 'ym-purple': '#5B2A9D', 'ym-bg': '#F5F3FF' },
+                fontFamily: { 'sans': ['Inter', 'system-ui', 'sans-serif'] }
+            }}
+        }
+    </script>
+</head>
+<body class="bg-ym-bg font-sans text-gray-900 min-h-screen flex items-center justify-center">
+    <div class="text-center px-4">
+        <div class="text-8xl mb-6">🔍</div>
+        <h1 class="text-6xl font-extrabold text-ym-purple mb-4">404</h1>
+        <p class="text-xl text-gray-600 mb-2">Страница не найдена</p>
+        <p class="text-gray-500 mb-8 max-w-md mx-auto">
+            Возможно, страница была удалена или вы перешли по неверной ссылке.
+            Но у нас есть много интересных товаров!
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/" class="bg-ym-purple hover:bg-purple-700 text-white font-semibold px-8 py-3 rounded-xl transition-colors">
+                🏠 На главную
+            </a>
+            <a href="/category.html" class="bg-white hover:bg-gray-50 text-ym-purple font-semibold px-8 py-3 rounded-xl border border-ym-purple transition-colors">
+                📋 Каталог товаров
+            </a>
+        </div>
+    </div>
+</body>
+</html>
